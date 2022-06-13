@@ -1,0 +1,13 @@
+.Header {
+  border-bottom: 2px solid black;
+  padding: 20px 0;
+  width: 100%;
+  background: gray;
+}
+
+.Text {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 18px;
+}

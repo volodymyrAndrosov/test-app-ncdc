@@ -1,0 +1,23 @@
+.PaginationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.PaginationItem,
+.ActivePageItem {
+  min-width: 40px;
+  width: auto;
+  padding: 10px;
+  border: 1px solid gray;
+  color: blue;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.ActivePageItem {
+  color: white;
+  background: blue;
+}
