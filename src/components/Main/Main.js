@@ -11,12 +11,8 @@ const Main = () => {
   const [inputValue, setInputValue] = useState("");
   const [error, setError] = useState(null);
   const [tiles, setTiles] = useState(null);
-  const [currentPage, setCurrentPage] = useState(null);
+  const [currentPage, setCurrentPage] = useState(paginationKeys.PAGE_DEFAULT_VALUE);
   const isFetched = tiles || error;
-
-  useEffect(() => {
-    setCurrentPage(paginationKeys.PAGE_DEFAULT_VALUE);
-  }, []);
 
   useEffect(() => {
     fetchRandomUser({
