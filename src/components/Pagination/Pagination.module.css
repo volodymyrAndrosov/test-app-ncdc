@@ -4,6 +4,7 @@
   align-items: center;
   width: fit-content;
   margin: 20px auto;
+  flex-wrap: wrap;
 }
 
 .PaginationItem,
@@ -17,7 +18,20 @@
   text-align: center;
 }
 
+.PaginationItem,
+.ActivePageItem:hover {
+  cursor: pointer;
+}
+
 .ActivePageItem {
   color: white;
   background: blue;
+}
+
+@media only screen and (max-width: 720px) {
+  .PaginationItem,
+  .ActivePageItem {
+    min-width: 20px;
+    margin-bottom: 5px;
+  }
 }
